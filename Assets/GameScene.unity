@@ -3865,7 +3865,7 @@ RectTransform:
   - {fileID: 1983349257}
   - {fileID: 1975672561}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4039,80 +4039,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 471358284}
---- !u!1 &540467933
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 540467935}
-  - component: {fileID: 540467934}
-  - component: {fileID: 540467936}
-  - component: {fileID: 540467937}
-  m_Layer: 0
-  m_Name: itemGenerator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &540467934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 540467933}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98d49471c6eff914f850e5b813ce7333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carPrefab: {fileID: 1095803628461730, guid: 7cc386035863d214b808499ed875d674, type: 2}
-  coinPrefab: {fileID: 1109192598624542, guid: 3e5f3d1cf2fa67f43b0667a787262b69, type: 2}
-  conePrefab: {fileID: 1022323355719592, guid: f44e1c60eca3a6545a815a61c7a27c81, type: 2}
-  unitychan: {fileID: 0}
---- !u!4 &540467935
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 540467933}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.994616, y: 1.7076285, z: -239.34937}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &540467936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 540467933}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf44fef8186cc3145b429c7b4723cf5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitychan: {fileID: 0}
-  posRange: 3.4
---- !u!114 &540467937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 540467933}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83c3c7fd19b21294790373c960d5542b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carPrefab: {fileID: 1095803628461730, guid: 7cc386035863d214b808499ed875d674, type: 2}
-  coinPrefab: {fileID: 1109192598624542, guid: 3e5f3d1cf2fa67f43b0667a787262b69, type: 2}
-  conePrefab: {fileID: 1022323355719592, guid: f44e1c60eca3a6545a815a61c7a27c81, type: 2}
-  goalPos: 120
 --- !u!1001 &877133129
 Prefab:
   m_ObjectHideFlags: 0
@@ -4327,8 +4253,11 @@ GameObject:
   - component: {fileID: 1271197561}
   - component: {fileID: 1271197560}
   - component: {fileID: 1271197562}
+  - component: {fileID: 1271197563}
+  - component: {fileID: 1271197564}
+  - component: {fileID: 1271197565}
   m_Layer: 0
-  m_Name: itemcarpoduction
+  m_Name: itemGenerator2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4348,6 +4277,8 @@ MonoBehaviour:
   carPrefab: {fileID: 1095803628461730, guid: 7cc386035863d214b808499ed875d674, type: 2}
   unitychan: {fileID: 0}
   goalPos: 120
+  diffrence: 0
+  uniz: 0
 --- !u!4 &1271197561
 Transform:
   m_ObjectHideFlags: 0
@@ -4359,7 +4290,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1271197562
 MonoBehaviour:
@@ -4367,15 +4298,69 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1271197559}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83c3c7fd19b21294790373c960d5542b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitychan: {fileID: 0}
   carPrefab: {fileID: 1095803628461730, guid: 7cc386035863d214b808499ed875d674, type: 2}
   coinPrefab: {fileID: 1109192598624542, guid: 3e5f3d1cf2fa67f43b0667a787262b69, type: 2}
   conePrefab: {fileID: 1022323355719592, guid: f44e1c60eca3a6545a815a61c7a27c81, type: 2}
   goalPos: 120
+  posRange: 3.4
+  unidifference: 0
+  startPos: -160
+--- !u!114 &1271197563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1271197559}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d37dd5944ed524881501bfb2ab7c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitychan: {fileID: 0}
+  goalPos: 120
+  diffrence: 0
+  uniz: 0
+  conePrefab: {fileID: 1022323355719592, guid: f44e1c60eca3a6545a815a61c7a27c81, type: 2}
+--- !u!114 &1271197564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1271197559}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525010891a456b449958f5fc80ce4c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitychan: {fileID: 0}
+  goalPos: 120
+  diffrence: 0
+  uniz: 0
+  coinPrefab: {fileID: 1109192598624542, guid: 3e5f3d1cf2fa67f43b0667a787262b69, type: 2}
+--- !u!114 &1271197565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1271197559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c146c6114c6c92446819682473d902ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitychan: {fileID: 0}
+  goalPos: 120
+  diffrence: 0
+  uniz: 0
+  coinPrefab: {fileID: 1109192598624542, guid: 3e5f3d1cf2fa67f43b0667a787262b69, type: 2}
+  carPrefab: {fileID: 1095803628461730, guid: 7cc386035863d214b808499ed875d674, type: 2}
+  conePrefab: {fileID: 1022323355719592, guid: f44e1c60eca3a6545a815a61c7a27c81, type: 2}
 --- !u!1 &1297218856
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,7 +4421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1369823290
 Prefab:
